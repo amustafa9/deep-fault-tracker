@@ -1,8 +1,8 @@
 import torch.nn as nn
 import torch
 import torch.nn.functional as F
-from .networks_other import Unetconv_norm_lrelu, Unetnorm_lrelu_conv,Unetlrelu_conv,Unetnorm_lrelu_upscale_conv_norm_lrelu
-from .networks_other import init_weights
+from networks_other import Unetconv_norm_lrelu, Unetnorm_lrelu_conv,Unetlrelu_conv,Unetnorm_lrelu_upscale_conv_norm_lrelu
+from networks_other import init_weights
 
 """
 code layout is ugly

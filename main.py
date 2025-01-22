@@ -23,7 +23,7 @@ def load_yaml_file(file_path):
         print(f"Error: Unable to parse YAML file: {exc}")
         return None
 
-yaml_file = "/home/ubuntu/projects/faultseg/configs/FaultEstimator3D.yaml"
+yaml_file = "/home/ubuntu/projects/deep-fault-tracker/configs/FaultEstimator3D.yaml"
 args = load_yaml_file(yaml_file)
 fault_trainer = FaultEstimator3D(args)
 
