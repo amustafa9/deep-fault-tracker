@@ -1,0 +1,28 @@
+# performs training of 3D models for fault estimation
+
+bucket: misc-bucket-new
+
+# training specific settings
+training: False
+seismic_file_path: synthetic-fault-data/seismic/seismic
+fault_mask_path: synthetic-fault-data/fault/fault
+epochs: 1000
+alpha: 0.5
+gamma: 0.5
+learning_rate: 0.001
+pos_weight: 20
+checkpoint_save_dir: fault-training-checkpoints
+last_train_checkpoint: fault-training-checkpoints/models/checkpoint_ep_523.pt
+save_freq: 20
+
+# inference settings
+inference: True
+test_checkpoint_path: fault-training-checkpoints/models/checkpoint_ep_594.pt
+test_seismic_vol_path: seismic_volumes/train_seismic.npy
+chunk_size: 128  # chunk size for inference
+overlap: 30  # overlap in pixels
+clipping_std: 1  # number of standard deviations to clip input seismic
+threshold: 0.7  # threshold for output
+test_checkpoint_save_dir: fault-test-checkpoints  # directory to store test results
+
+

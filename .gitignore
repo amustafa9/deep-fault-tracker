@@ -1,0 +1,91 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.out
+*.err
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+
+# Cache files
+*.cache
+*.pickle
+*.pkl
+
+# Test coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# MyPy type checker reports
+.mypy_cache/
+
+# Pytest cache
+.pytest_cache/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Distribution packages
+*.wheel
+
+# C extensions
+*.so
+
+# Database files
+*.sqlite3
+*.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Credentials and sensitive information
+.env
+*.key
+*.pem
+
+# AWS-related files
+*.tfstate
+*.tfstate.*
+
+# Docker files
+*.pid
+docker-compose.override.yml
+
+# Node.js (if using frontend assets)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Generated files
+*.svg
+*.png
+*.jpg
+*.gif
+*.pdf
+
+# Temporary files from various tools
+*.orig
